@@ -315,6 +315,7 @@ public abstract class ContactEntryListFragment<T extends ContactEntryListAdapter
 
         // Next time this method is called, we should start loading non-priority directories
         mLoadPriorityDirectoriesOnly = false;
+        mAdapter.notifyDataSetChanged();
     }
 
     @Override
