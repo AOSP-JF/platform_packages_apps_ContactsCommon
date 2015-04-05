@@ -153,7 +153,7 @@ public class ImportExportDialogFragment extends DialogFragment
                 new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                boolean dismissDialog;
+                boolean dismissDialog = true;
                 final int resId = adapter.getItem(which).mChoiceResourceId;
                 switch (resId) {
                     case R.string.import_from_sim:
